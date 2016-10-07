@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hornbill Online Library</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/materialize.min.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/timer.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="center col s12"><h5 class="green white-text">
+                        <span id="date_time"></span>
+                        <script type="text/javascript">window.onload = date_time('date_time');</script>
+                    </h5></div>
+            </div>
+            <div class="row"><div class="center col s8">Administrator Account</div><div class=" right col s4"><a class="green-text" href="../index.php">Sign Out<i class="material-icons">settings_power</i></a></div></div>
+              <div class="row">
+              <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3 orange-text"><a class="active orange-text" target="_self" href="home">Home</a></li>
+                  <li class="tab col s3"><a class="orange-text" href="books.html">Returned Book</a></li>
+                  <li class="tab col s3"><a class="orange-text" href="#test3">Clear Penalty</a></li>
+                  <li class="tab col s3"><a class="orange-text" href="#test4">Borrowed Books</a></li>
+                  <li class="tab col s3"><a class="orange-text" target="_self" href="../signup.php">New Client</a></li>
+                  <li class="tab col s3"><a class="orange-text" href="#test4">New Book</a></li>
+                </ul>
+              </div>    
+             </div>
+    </div>
+        <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background" src="images/mine.jpg">
+      <a href="#!user"><img class="circle" src="images/hornbill.png"></a>
+      <a href="#!name"><span class="white-text name">Kilimo Cornelius</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Clear Charges</a></li>
+    <li class="small"><a href="#!">Issue Book</a></li>
+    <li><a href="#!">Returned Book</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        
+                <!--Include javascript files-->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/materialize.min.js"></script>
+        <script>
+            $('.button-collapse').sideNav({
+      menuWidth: 209, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );</script>
+        
+    </body>
+</html>
